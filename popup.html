@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ページ情報の保存</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h2>現在のページ情報</h2>
+    <label for="pageTitle">タイトル:</label>
+    <textarea id="pageTitle" placeholder="ページのタイトルを入力"></textarea>
+    <label for="pageUrl">URL:</label>
+    <textarea id="pageUrl" placeholder="ページのURLを入力"></textarea>
+    <label for="pageTags">タグ:</label>
+    <textarea id="pageTags" placeholder="タグを入力（カンマ区切り）"></textarea>
+    <label for="pageNotes">備考:</label>
+    <textarea id="pageNotes" placeholder="備考を入力"></textarea>
+    <button id="writeButton">スプレッドシートに保存</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

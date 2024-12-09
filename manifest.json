@@ -1,0 +1,25 @@
+{
+  "name": "Web Memo Database On GoogleSpreadsheet",
+  "version": "1.0",
+  "description": "開いているWebページのタイトルとURLを指定したGoogleスプレッドシートに保存する",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "WebMemoDatabaseOnGoogleSpreadsheet"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "oauth2": {
+    "client_id": "CLIENT_ID",
+    "scopes": ["https://www.googleapis.com/auth/spreadsheets"]
+  },
+  "permissions": ["identity", "activeTab"],
+  "web_accessible_resources": [
+    {
+      "resources": [".env"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": ["https://sheets.googleapis.com/"]
+}
